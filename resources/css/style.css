@@ -1,0 +1,485 @@
+/*website main color:  #00b894 #475e92*/
+
+/* --------------------Basic Setup--------------------- */
+
+html,
+body{
+    background-color: #fff;
+    color: #747474;
+    font-family: 'Muli', 'Ariel', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering:  optimizeLegibility;
+    overflow-x: hidden;
+    width:100%;
+    margin: 0px;
+    padding:0px; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+.clearfix{zoom:1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* --------------------Reusable Components--------------------- */
+
+
+
+section {
+    padding: 60px 0;
+}
+/* --------------Headings--------------- */
+h1{
+    margin: 0px;
+    color:#fff;
+    font-size:200%;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+h2{
+    font-size:180%;
+    word-spacing: 1px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h3{
+    font-size: 125%;
+    margin-bottom: 15px;
+    margin-left: 45%;
+}
+
+h4{
+    font-size: 130%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+h1, h2, h3, h4{
+    word-spacing: 0px;
+    font-weight:300;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #475e92;
+    content: " ";
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.box p{
+    font-size: 85%;
+    line-height: 145%;
+}
+/* ------------Paragraphs------------- */
+.long-copy{
+    line-height: 140%;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+
+/* ------------Icons------------- */
+.icon-big{
+    font-size: 250%;
+    display: block;
+    color: #475e92;
+    margin-bottom: 1px;
+    margin-left: 50%;
+}
+
+.icon-small{
+    color: #475e92;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 5px;
+    
+    /*secret to align text and icon*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+/* ------------Buttons------------- */
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color:#fff;
+    -webkit-transition: background-color .3s, border .3s;
+    transition: background-color .3s, border .3s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: #475e92;
+    border: 1px solid #475e92;
+    margin-right: 10px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #475e92;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #3a4e7b;
+}
+ 
+.btn-full:hover,
+.btn-full:active{
+    background-color: #3a4e7b;
+    border: 1px solid #3a4e7b;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #3a4e7b;
+}
+
+/* ------------Header Code-------------- */
+.row{
+    max-width: 100%;
+    margin: -15 auto -15 auto;
+    
+}
+
+
+header{
+   
+    background-image: linear-gradient(rgba(69, 69, 69, 0.50),rgba(69, 69, 69, 0.5)), url(/resources/img/whiteboard.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    background-attachment: scroll;
+    max-width: 100%;
+    width: 100vw;
+    background-repeat: no-repeat
+    
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-45%, -50%);
+    transform: translate(-45%, -50%)
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float:left;   
+    margin-top: 10px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #475e92;
+    
+}
+/* ------------Features-------------- */
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+/* ------------Meals-------------- */
+
+.section-areas{
+    padding:0;
+}
+.area-showcase{
+    list-style: none;
+    width:100%;
+}
+
+.area-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.location-photo{
+      width: 100%;
+    margin:0;
+    overflow:hidden;
+    background-color: #000;
+}
+
+.location-photo img{
+    opacity: 0.7;
+    width:100%;
+    height: 250px ;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.location-photo img:hover{
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03); 
+    opacity: 1;
+}
+
+/* ------------How it works-------------- */
+
+.section-steps{
+    background-color: #f0f0f0;
+}
+
+.steps-box:first-child{
+    text-align: center;
+    padding-right: 3%;
+    margin-top: 30px;
+    padding-right: 5%;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 30%;
+    
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works-step div{
+    color:#475e92;
+    border: 2px solid #475e92;
+    border: 2px solid #475e92;
+    display: inline-block;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    float:left;
+    font-size: 130%;
+    margin-right: 0px;
+}
+
+.btn-app img{
+    height:50px;
+    width:auto;
+}
+
+/* ------------Cities-------------- */
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+/* ------------Customer feedback-------------- */
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.27), #000),url(/resources/css/img/reference.jpg);
+    background-size:cover;
+    color:#fff;
+    background-attachment: scroll;
+    background-position:center;
+    max-width: 100%;
+    width:100%;
+    
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 15px;
+    
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    max-width: 100%;
+    
+}
+
+/* ------------Contact form-------------- */
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type= text],
+input[type= email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #c9c9c9;
+}
+
+textarea{
+    height:100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;   
+}
+
+*:focus{outline:none;}
+
+.form-messages{
+    width:70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #7b7b7b;
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.success {
+    background-color: rgba(71, 94, 146, 0.62);
+}
+
+.error{
+    background-color: rgba(231, 76, 60, 0.48);
+}
+
+/* ------------Footer-------------- */
+
+
+footer{
+    background-color: #7b7b7b;
+    padding: 30px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float:right;   
+    font-size: 150%;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right:0;   
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border:0;
+    color: #b2b2b2;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #d1d1d1;
+}
+
+.social-links li a:hover,
+.social-links li a:active{
+    color: #475e92;
+    
+}
+
+footer p {
+    color: #b2b2b2;
+    text-align: center;
+    font-size: 60%;
+    margin-top: 20px;
+}
